@@ -1,0 +1,138 @@
+@font-face {
+    font-family: MYRIADPRO;
+    src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+}
+.wrapper {
+    max-width: 2000px;
+    min-width: 200px;
+    margin: 0 auto;
+}
+* {
+    padding: 0 0;
+    margin: 0 0;
+    text-decoration: none;
+}
+
+body {
+    width: 80%;
+    padding: 0 10%;
+    font-family: "MYRIADPRO", sans-serif;
+    font-weight: normal;
+    color: #000000;
+
+}
+header {
+
+
+    text-align: center;
+    margin-top: 68px;
+    opacity: 0.75;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight:normal;
+}
+header span {
+    color: #ff5c36;
+}
+
+header p {
+
+    margin-bottom: 140px;
+
+}
+
+
+main .left {
+    float: left;
+    width: 26%;
+}
+
+main .left ul {
+    list-style: none;
+
+}
+
+main .left ul li {
+    background: #fbfbfb;
+    width: 104px;
+    height: 92px;
+    display: block;
+}
+main .left ul li+li {
+    margin-top: 8px;
+}
+
+main .left ul li:nth-child(1) {
+    background: url("../img/1.png") no-repeat ;
+    background-position: 28px 24px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.20);
+}
+
+main .left ul li:nth-child(2) {
+    background: url("../img/2.png") no-repeat ;
+    background-position: 19px 14px;
+}
+
+main .left ul li:nth-child(3) {
+    background: url("../img/3.png") no-repeat ;
+    background-position: 16px 20px;
+}
+
+main .left ul li:nth-child(4) {
+    background: url("../img/4.png") no-repeat ;
+    background-position: 28px 24px;
+}
+
+.central {
+    width: 43%;
+    width: 34%;
+    float: left;
+    opacity: 0.7;
+}
+.central > h2 {
+    font-size: 30px;
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+.central span{
+    padding-bottom: 12px;
+    border-bottom: 3px solid #ff5c36;
+}
+
+.central > div {
+    width: 238px;
+    height: 55px;
+    border: 1px solid #ededed;
+    border-radius: 27px;
+    text-align: center;
+    line-height: 55px;
+    box-shadow: 0px 21px 34px -16px rgba(0,0,0,0.42);
+    margin-top: 30px;
+
+}
+
+.central > div i {
+    transform: rotate(45deg);
+    margin-right: 10px;
+    opacity: 0.4;
+}
+.central > div > a {
+    color: #000000;
+
+}
+
+.right {
+    width: 39%;
+    float: right;
+
+}
+
+.right img {
+
+    float: right;
+}
+
+
+
