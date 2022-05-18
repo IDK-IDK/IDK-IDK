@@ -44,64 +44,64 @@ header p {
 }
 
 
-main .left {
+main .wraper .left {
     float: left;
     width: 26%;
 }
 
-main .left ul {
+main .wraper .left ul {
     list-style: none;
 
 }
 
-main .left ul li {
+main .wraper .left ul li {
     background: #fbfbfb;
     width: 104px;
     height: 92px;
     display: block;
 }
-main .left ul li+li {
+main .wraper .left ul li+li {
     margin-top: 8px;
 }
 
-main .left ul li:nth-child(1) {
+main .wraper .left ul li:nth-child(1) {
     background: url("../img/1.png") no-repeat ;
     background-position: 28px 24px;
     box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.20);
 }
 
-main .left ul li:nth-child(2) {
+main .wraper .left ul li:nth-child(2) {
     background: url("../img/2.png") no-repeat ;
     background-position: 19px 14px;
 }
 
-main .left ul li:nth-child(3) {
+main .wraper .left ul li:nth-child(3) {
     background: url("../img/3.png") no-repeat ;
     background-position: 16px 20px;
 }
 
-main .left ul li:nth-child(4) {
+main .wraper .left ul li:nth-child(4) {
     background: url("../img/4.png") no-repeat ;
     background-position: 28px 24px;
 }
 
-.central {
-    width: 43%;
+main .wraper .central {
+
     width: 34%;
     float: left;
     opacity: 0.7;
 }
-.central > h2 {
+main .wraper .central > h2 {
     font-size: 30px;
     padding-bottom: 40px;
     font-weight: normal;
 }
-.central span{
+main .wraper .central span{
     padding-bottom: 12px;
     border-bottom: 3px solid #ff5c36;
 }
 
-.central > div {
+main .wraper .central > div {
     width: 238px;
     height: 55px;
     border: 1px solid #ededed;
@@ -113,26 +113,112 @@ main .left ul li:nth-child(4) {
 
 }
 
-.central > div i {
+main .wraper .central > div i {
     transform: rotate(45deg);
     margin-right: 10px;
     opacity: 0.4;
 }
-.central > div > a {
+main .wraper .central > div > a {
     color: #000000;
 
 }
 
-.right {
-    width: 39%;
+main .wraper .right {
+
     float: right;
 
 }
 
-.right img {
+main .wraper .right img {
 
     float: right;
 }
 
+@media  (max-width: 1600px) {
+    body { width: 84%;
+        padding: 0 8%;
+    }
+    main .wraper .left {width: 22%}
+    main .wraper .central {width: 40%}
 
+}
 
+@media  (max-width: 1450px) {
+    main .wraper .left {width: 20%}
+    main .wraper .central {width: 46%}
+}
+
+@media  (max-width: 1350px) {
+    body { width: 84%;
+        padding: 0 8%;
+    }
+    main .wraper .left {width: 18%}
+    main .wraper .central {width: 48%}
+
+}
+@media  (max-width: 1270px) {
+    body { width: 80%;
+        padding: 0 10%;
+    }
+
+    main .wraper .central {width: 100%;
+        float: none;
+    }
+    main .wraper .left {width: 30% }
+    main .wraper .central {width: 70%; float: left}
+    main .wraper .right { width: 100%}
+    main .wraper .right img { width: 50%}
+
+    header p {margin-bottom: 100px}
+
+}
+@media  (max-width: 950px) {
+
+    main .wraper .right img { width: 50%; margin-top: 30px}
+    /*header p {margin-bottom: 70px}*/
+
+}
+@media  (max-width: 715px) {
+
+    main .wraper .right img { width: 50%; margin-top: 30px}
+    header p {margin-bottom: 50px}
+    main .wraper .right { float: none; width: 100%}
+    main .wraper .right img {float: none; width: 50%}
+
+}
+@media  (max-width: 615px) {
+    body { width: 86%;
+        padding: 0 7%;
+    }
+    main .wraper .left {width: 25% }
+
+    main .wraper .right { padding-top:200px}
+
+}
+
+@media  (max-width: 572px) {
+    body { width: 90%;
+        padding: 0 5%;
+    }
+
+    main .wraper .right { padding-top:200px}
+
+}
+
+@media  (max-width: 546px) {
+    body { width: 96%;
+        padding: 0 3%;
+    }
+
+    main .wraper .right { padding-top:250px}
+
+}
+
+@media  (max-width: 513px) {
+    /*body { width: 96%;*/
+    /*    padding: 0 3%;*/
+    /*}*/
+    main .wraper .right { float: none; width: 80%}
+    /*main .wraper .right img { width: 40%}*/
+
+}
